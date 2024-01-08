@@ -1,0 +1,21 @@
+spring:
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database: mysql
+    database-platform: org.hibernate.spatial.dialect.mysql.MySQL56InnoDBSpatialDialect
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/reservation?useSSL=false&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: reservation
+    password: reservation
+
+  jwt:
+    secret: ZGF5b25lLXNwcmluZy1ib290LWRpdmlkZW5kLXByb2plY3QtdHV0b3JpYWwtand0LXNlY3JldC1rZXkK
+
+
+
+
